@@ -36,9 +36,14 @@
       wave.getState().submitDelta({'count': '0'});
     }
 
+    function highlightCounter() {
+      div.setAttribute('style', 'background-color: yellow');
+    }
+
     </script>
     <input type=button value="Click Me!" id="butCount" onClick="buttonClicked()">
     <input type=button value="Reset" id="butReset" onClick="resetCounter()">
+    <input type=button value="Highlight" id="butHighlight" onClick="highlightCounter()">
   ]]> 
   </Content>
 </Module>
