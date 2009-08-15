@@ -37,7 +37,11 @@
     }
 
     function highlightCounter() {
-      div.setAttribute('style', 'background-color: yellow');
+      if (div.style.backgroundColor == 'yellow') {
+        div.setAttribute('style', 'background-color: white');
+      } else {
+        div.setAttribute('style', 'background-color: yellow');
+      }
     }
 
     </script>
